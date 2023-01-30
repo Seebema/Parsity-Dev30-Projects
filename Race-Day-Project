@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+//Variables for Racers 
+let raceNumber = Math.floor(Math.random() * 1000);
+
+// let early = true;
+let early = Math.random() >= 0.5;
+
+// var age = 12;
+let age = Math.floor(Math.random()* 75);
+
+//control flow to check if runner registered early(early) and if they are an adult or not (age)
+if (early === true && age > 18){
+    raceNumber +=1000;
+    console.log(`Your race number: ${raceNumber} and your race starts at 9:30 am with the adult early class`);
+}
+
+// controll flow to check for adults that did not register early
+else if (age >= 18){
+    console.log(`Your race number: ${raceNumber} and your race starts at 11:00 am with the adult late class`);
+}
+
+// control flow to check for runners under 18
+else if (age < 18){
+    console.log(`Your race number is: ${raceNumber} and your race starts at 12:30 pm with the youth class`);
+}
+console.log(`Goodluck runner ${raceNumber} !`);
