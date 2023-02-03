@@ -47,7 +47,8 @@ const getUserChoice = (userInput) => {
     (userChoice === 'paper' && computerChoice === 'rock')
     ) {
         return 'User Wins';
-    } else {'Computer Wins';
+    } else {
+        return 'Computer Wins';
     }
     }
 // console.log(determineWinner('rock','scissors'));
